@@ -34,7 +34,7 @@
 				<version>3.2</version>
 				<configuration>
 					<verbose>true</verbose>
-					<source>1.8</source> <!-- QUESTION : WHAT IS 1.8 HERE? -->
+					<source>1.8</source>
 					<target>1.8</target>
 					<showWarnings>true</showWarnings>
 				</configuration>
