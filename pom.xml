@@ -26,6 +26,7 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Dependency for Test Coverage: Jacoco-->
 		<dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
@@ -76,13 +77,13 @@
               <version>3.0.0</version>
             </plugin>
             <plugin>
-              <!-- Build an executable JAR -->
+              <!-- Build an executable JAR: Main Manifest -->
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-jar-plugin</artifactId>
               <version>3.1.0</version>
               <configuration>
                 <archive>
-                  <manifest><!-- Bomba numero 1: inserita la mainclass nel manifest -->
+                  <manifest>
                     <addClasspath>true</addClasspath>
                     <classpathPrefix>lib/</classpathPrefix>
                     <mainClass>org.tryHard.App</mainClass>
@@ -93,9 +94,10 @@
           </plugins>
         </pluginManagement>
 		<plugins>
+		    <!-- Code Static Analysis: Checkstyle -->
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-checkstyle-plugin</artifactId><!-- Bomba numero 2: inserito il plugin checkstyle per l'analisi statica del codice -->
+              <artifactId>maven-checkstyle-plugin</artifactId>
               <version>3.3.1</version>
               <configuration>
                 <failsOnError>true</failsOnError>
@@ -111,6 +113,7 @@
                 </execution>
               </executions>
             </plugin>
+            <!-- Test Coverage: Jacoco and Coveralls-->
 			<plugin>
     			<groupId>org.jacoco</groupId>
     			<artifactId>jacoco-maven-plugin</artifactId>
@@ -139,7 +142,7 @@
                     <dependency>
                         <groupId>javax.xml.bind</groupId>
                         <artifactId>jaxb-api</artifactId>
-                        <version>2.3.1</version> <!-- Versione di jaxb-api -->
+                        <version>2.3.1</version> 
                     </dependency>
                 </dependencies>
                 <configuration>
