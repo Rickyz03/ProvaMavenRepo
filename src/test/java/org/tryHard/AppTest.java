@@ -1,3 +1,8 @@
+////////////////////////////////////////////////////////////////////
+// Riccardo Stefani 2068225
+// Leonardo Salviato 2068222
+////////////////////////////////////////////////////////////////////
+
 package org.tryHard;
 
 import static org.junit.Assert.assertEquals;
@@ -9,7 +14,8 @@ import java.io.PrintStream;
 
 public class AppTest {
 
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream outContent = 
+                            new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 
     @Before
