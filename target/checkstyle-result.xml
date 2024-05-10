@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/home/riccardo/Scrivania/Università/Secondo_anno/Secondo_semestre/MTSS/LabGitHubActions/ProvaMavenRepo/src/main/java/org/tryHard/App.java">
+</file>
+<file name="/home/riccardo/Scrivania/Università/Secondo_anno/Secondo_semestre/MTSS/LabGitHubActions/ProvaMavenRepo/src/test/java/org/tryHard/AppTest.java">
+<error line="17" severity="error" message="Line is longer than 80 characters (found 81)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+</checkstyle>
