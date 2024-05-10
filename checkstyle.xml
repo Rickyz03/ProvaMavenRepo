@@ -1,4 +1,4 @@
-<?xml version="1.0"?><!-- Bomba numero 2: il primo file di supporto per il plugin checkstyle. L'altro è LICENSE.txt -->
+<?xml version="1.0"?>
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
         "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 <module name="Checker">
