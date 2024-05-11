@@ -34,6 +34,9 @@ jobs:
         run: |
           echo "coverage = ${{ steps.jacoco.outputs.coverage}}"
           echo "branches = ${{ steps.jacoco.outputs.branches}}"
+
+      - name: Generate checkstyle badge
+        run: mvn post-site
         
       - name: Add badges
         run: git add .github/ReadmeBadges
