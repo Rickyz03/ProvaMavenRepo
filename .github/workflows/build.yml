@@ -35,8 +35,8 @@ jobs:
           echo "coverage = ${{ steps.jacoco.outputs.coverage}}"
           echo "branches = ${{ steps.jacoco.outputs.branches}}"
           
-      - name: Checkout
-        uses: actions/checkout@v3
+      #- name: Checkout
+       # uses: actions/checkout@v3
         
       - name: Add badges
         run: git add .github/ReadmeBadges
@@ -45,7 +45,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m "Added jacoco badges" -a || true
+          git commit -m "Generated badges" -a || true
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
