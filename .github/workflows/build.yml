@@ -36,7 +36,7 @@ jobs:
           echo "branches = ${{ steps.jacoco.outputs.branches}}"
           
       - name: Checkout
-        uses: actions/setup-java@v3
+        uses: actions/checkout@v3
         
       - name: Add badges
         run: git add .github/ReadmeBadges
