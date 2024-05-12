@@ -13,11 +13,6 @@ jobs:
           cache: 'maven'
       - name: Build with Maven
         run: mvn -B install --file pom.xml
-
-        # mvn:coveralls:report
-        # [Risultato della build] in README
-        # {Analisi statica} in README
-        # [Code Coverage] in README
         
       - name: Generate coveralls report
         run: mvn coveralls:report
@@ -55,7 +50,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.head_ref }}
-          #force: true
 
       - name: Upload JaCoCo coverage report
         uses: actions/upload-artifact@v3
