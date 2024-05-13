@@ -65,7 +65,7 @@
                   <manifest>
                     <addClasspath>true</addClasspath>
                     <classpathPrefix>lib/</classpathPrefix>
-                    <mainClass>org.tryHard.App</mainClass>
+                    <mainClass>org.tryHard.RomanPrinter</mainClass>
                   </manifest>
                 </archive>
               </configuration>
