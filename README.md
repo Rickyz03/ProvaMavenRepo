@@ -16,7 +16,7 @@ mvn clean verify sonar:sonar -Pcoverage
 
 Tuttavia, ciò espone un token nel pom.xml, quindi vedi tu se vuoi utilizzarla o meno.
 
-Inoltre, la prima volta che lo fai ti va a creare un progetto SonarCloud nuovo, a prescindere che tu ne avessi già creato uno o meno.
+Inoltre, la prima volta che lo fai ti va a creare un progetto SonarCloud nuovo (chiamato "maven-example-1"), a prescindere che tu ne avessi già creato uno o meno.
 
 Inoltre, quando ho attivato il Quality Gate sul nuovo progetto SonarCloud trovato automaticamente, si è tolta la coverage, purtroppo. E devi eliminare il progetto da SonarCloud e ricrearlo per riaverla. 
 
