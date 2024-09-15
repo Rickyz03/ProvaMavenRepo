@@ -21,9 +21,9 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <!-- Configurazione SonarCloud -->
-        <sonar.organization>YOUR_SONARCLOUD_ORGANIZATION</sonar.organization>
+        <sonar.organization>rickyz03</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>12f4028c8740b1363c12357271736dee652d292e</sonar.login>
+        <sonar.token>12f4028c8740b1363c12357271736dee652d292e</sonar.token>
     </properties>
 
     <dependencies>
