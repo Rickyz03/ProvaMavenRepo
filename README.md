@@ -3,6 +3,7 @@
 ![coverage](.github/ReadmeBadges/jacoco.svg)
 ![branches_coverage](.github/ReadmeBadges/branches.svg)
 [![Coverage Status](https://coveralls.io/repos/github/Rickyz03/ProvaMavenRepo/badge.svg?branch=master)](https://coveralls.io/github/Rickyz03/ProvaMavenRepo?branch=master)
+
 #Prova Maven Repo
 In questo repo faccio le mie prove con roba legata allo sviluppo, imparata prevalentemente in MTSS.  
 
@@ -13,4 +14,6 @@ Il comando per ottenerla è:
 mvn clean verify sonar:sonar -Pcoverage
 '''
 
-Tuttavia, ciò espone un token nel pom.xml, quindi vedi tu se vuoi utilizzarla o meno
+Tuttavia, ciò espone un token nel pom.xml, quindi vedi tu se vuoi utilizzarla o meno.
+
+Inoltre, quando ho attivato il Quality Gate sul nuovo progetto SonarCloud trovato automaticamente, si è tolta la coverage, purtroppo. Insomma, il tentativo è ancora acerbo.
