@@ -21,7 +21,7 @@ Dalla seconda volta in poi, nell'Overview appare 0% come percentuale, e la vera 
 
 Inoltre, quando ho attivato il Quality Gate sul nuovo progetto SonarCloud, si è tolta la coverage, purtroppo, nel senso che ti riappare il consiglio di leggere la guida per capire come attivarla. Devi eliminare il progetto da SonarCloud e rieseguire il su scritto comando per riaverla (in un nuovo "maven-example-1"). 
 
-La guida consigliata da SonarCloud (per progetti a modulo singolo, come il mio) diceva di fare così per prelevare il report di code coverage di Jacoco e visualizzarlo in SonarCloud. Se poi c'è un altro modo per farlo, scoperto magari da qualche blogger, non ho tempo bè voglia di andarlo a cercare.
+La guida consigliata da SonarCloud (https://docs.sonarsource.com/sonarcloud/enriching/test-coverage/java-test-coverage/)(per progetti a modulo singolo, come il mio) diceva di fare così per prelevare il report di code coverage di Jacoco e visualizzarlo in SonarCloud. Se poi c'è un altro modo per farlo, scoperto magari da qualche blogger, non ho tempo bè voglia di andarlo a cercare.
 
 Insomma, il tentativo è ancora acerbo, dunque, per favore, almeno per adesso, non provare a visualizzare la Jacoco code coverage in SonarCloud in progetti seri.
 
