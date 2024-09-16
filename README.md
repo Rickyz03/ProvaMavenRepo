@@ -14,11 +14,13 @@ Il comando per ottenerla è:
 mvn clean verify sonar:sonar -Pcoverage
 ```
 
-Tuttavia, ciò espone un token nel pom.xml, quindi vedi tu se vuoi utilizzarla o meno.
+Tuttavia, ciò espone un token nel pom.xml (e lo stesso SonarCloud te la espone come falla di sicurezza), quindi vedi tu se vuoi utilizzarla o meno.
 
 Inoltre, la prima volta che lo fai ti va a creare un progetto SonarCloud nuovo (chiamato "maven-example-1"), a prescindere che tu ne avessi già creato uno o meno.
-Dalla seconda volta in poi, nell'Overview appare 0% come percentuale, e la vera percentuale apparirà solo sotto nella sezione Main Branch. Strano ma vero
+Dalla seconda volta in poi, nell'Overview appare 0% come percentuale, e la vera percentuale apparirà solo sotto nella sezione Main Branch. Strano ma vero.
 
 Inoltre, quando ho attivato il Quality Gate sul nuovo progetto SonarCloud trovato automaticamente, si è tolta la coverage, purtroppo. E devi eliminare il progetto da SonarCloud e ricrearlo per riaverla. 
 
-Insomma, il tentativo è ancora acerbo, dunque per favore non usarlo in progetti seri.
+Insomma, il tentativo è ancora acerbo, dunque per favore non provare a visualizzare la coverage in SonarCloud in progetti seri.
+
+Inoltre, per favore usa JUnit 5 nel prossimo pom, perchè la 4.12 ha una vulnerability, e ChatGPT quando le chiedi di fare test in Java in automatico usa JUnit 5.
