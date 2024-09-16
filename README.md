@@ -11,15 +11,15 @@ L'ultima prova che ho fatto riguarda la possibilità di visualizzare la code cov
 Il comando per ottenerla è:
 
 ```bash
-mvn clean verify sonar:sonar -Pcoverage
+mvn clean install sonar:sonar -Pcoverage
 ```
 
 Tuttavia, ciò espone un token nel pom.xml (e lo stesso SonarCloud te la espone come falla di sicurezza), quindi vedi tu se vuoi utilizzarla o meno.
 
-Inoltre, la prima volta che lo fai ti va a creare un progetto SonarCloud nuovo (chiamato "maven-example-1"), a prescindere che tu ne avessi già creato uno o meno.  
+Inoltre, la prima volta che lo fai ti va a creare un progetto SonarCloud nuovo (chiamato con il "name" che hai scritto nel pom.xml), a prescindere che tu ne avessi già creato uno o meno (probabilmente aderisce ad uno già presente solo se il nome è lo stesso di "name" presente nel pom.xml, perchè è di quel nome lì che viene controllata la presenza).  
 Dalla seconda volta in poi, nell'Overview appare 0% come percentuale, e la vera percentuale apparirà solo sotto nella sezione Main Branch. Strano ma vero.
 
-Inoltre, quando ho attivato il Quality Gate sul nuovo progetto SonarCloud, si è tolta la coverage, purtroppo, nel senso che ti riappare il consiglio di leggere la guida per capire come attivarla. Devi eliminare il progetto da SonarCloud e rieseguire il su scritto comando per riaverla (in un nuovo "maven-example-1"). 
+Inoltre, quando ho attivato il Quality Gate sul nuovo progetto SonarCloud, si è tolta la coverage, purtroppo, nel senso che ti riappare il consiglio di leggere la guida per capire come attivarla. Devi eliminare il progetto da SonarCloud e rieseguire il su scritto comando per riaverla (in un nuovo progetto denominato con il "name" del pom.xml). 
 
 La guida consigliata da SonarCloud (https://docs.sonarsource.com/sonarcloud/enriching/test-coverage/java-test-coverage/ )(per progetti a modulo singolo, come il mio) diceva di fare così per prelevare il report di code coverage di Jacoco e visualizzarlo in SonarCloud. Se poi c'è un altro modo per farlo, scoperto magari da qualche blogger, non ho tempo bè voglia di andarlo a cercare.
 
